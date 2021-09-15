@@ -1,0 +1,102 @@
+-------VOTER ID
+
+Begin
+    prompt "enter a number" and store in num
+    if(num>=18) then
+        display "you are eligible"
+    else
+        display "you are not eligible"
+    End IF
+end
+
+-----INTEREST
+
+Begin
+    READ Inputs P=Principal amount,T=Time,R=Rate
+    CALCULATE S= P*T*R/100
+    PRINT S
+close
+
+
+-----Create a program to check whether a number is divisble by 2,3 and 5
+
+Begin
+	prompt " enter a number" and store in num
+	if(num%2==0&&num%3==0&&num%5==0)then 
+	     Display"divisible"
+	else:
+	     Display "not divisible"
+	End If
+end
+
+-------Voter Id above 18 below 60
+
+
+
+Begin
+    prompt "enter a number" and store in num
+    if(num<18) then
+        display "you are not eligible for voting"
+    elseif(num > 60)then
+        display "you are a senior citizen"
+    else(num>=18 && num<=60)
+        display " you are eligible for voting"
+    EndIF
+end
+
+
+-------print 1 to 5 using while
+
+
+begin
+	declare N as integer 
+	initialize N as 1
+	while(N<=5)
+	     print "N"
+	     N=N+1
+	end while
+end
+
+
+
+--------print even or odd
+
+
+BEGIN
+prompt "enter a number" and store in num
+DECLARE a num as integer
+for num in range 1 to 10
+if(num%2==0)
+print"even"
+else
+print"odd"
+End if
+END
+
+
+------prime or not
+
+
+BEGIN
+
+                DECLARE numbers[4] AS INTEGER ARRAY
+
+                FOR index=0 To 4
+
+                                ACCEPT numbers[index]
+
+                END FOR
+
+                FOR index=0 to 4
+
+                                IF((numbers[index]%1==0)&&(numbers[index]%numbers[index]==0)) THEN
+
+                                                DISPLAY numbers[index] “is a prime number”
+
+                                END IF
+
+                END FOR
+
+END
+
+
